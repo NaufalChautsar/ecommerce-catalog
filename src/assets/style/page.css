@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.app {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.background {
+    position: absolute;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #fff;
+    position: absolute;
+    width: 1160px;
+    height: 550px;
+    left: 147px;
+    top: 170px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.products-image {
+    flex: 100%;
+    padding: 60px;
+    margin: 20px;
+    width: 385px;
+    height: 500px;
+}
+
+.description-products {
+    margin: 20px 50px 20px 20px;
+    padding: 20px;
+}
+
+.title-women {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #720060;
+    margin: 20px 0;
+}
+
+.title-men {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #002772;
+    margin: 20px 0;
+}
+
+.detail-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.detail-products .category {
+    color: #3f3f3f;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.description-products .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-products .rating p {
+    margin-right: 5px;
+}
+
+.detail-products .rating .elipse-color-women {
+    margin: 0 0.5px;
+    width: 18px;
+    height: 18px;
+    left: 1016px;
+    top: 271px;
+    background: #720060;
+    border-radius: 50px;
+}
+
+.detail-products .rating .elipse-color-men {
+    margin: 0 0.5px;
+    width: 18px;
+    height: 18px;
+    left: 1016px;
+    top: 271px;
+    background: #002772;
+    border-radius: 50px;
+}
+
+.detail-products .rating .elipse-blank {
+    margin: 0 0.5px;
+    width: 18px;
+    height: 18px;
+    left: 1016px;
+    top: 271px;
+    background-color: #fff;
+    border: 1px solid #720060;
+    border-radius: 50px;
+}
+
+.description {
+    color: #1e1e1e;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 0 40px 30px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.price-women {
+    color: #720060;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33px;
+    margin-bottom: 15px;
+}
+
+.price-men {
+    color: #002772;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cta-buy-women {
+    background-color: #720060;
+    border-radius: 4px;
+    width: 225px;
+    height: 42px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.cta-buy-men {
+    background-color: #002772;
+    border-radius: 4px;
+    width: 225px;
+    height: 42px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.cta-next-women {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 225px;
+    height: 42px;
+    color: #720060;
+    border: 1px solid #720060;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.cta-next-men {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 225px;
+    height: 42px;
+    color: #002772;
+    border: 1px solid #002772;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.title-unvailable {
+    color: #000;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-next-unvailable {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 640px;
+    height: 42px;
+    color: #000;
+    border: 3px solid #000;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.image-product-unvailable {
+    position: absolute;
+    top: 50px;
+    left: 130px;
+}
+
+.description-unvailable {
+    position: absolute;
+    top: 240px;
+}
+
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
